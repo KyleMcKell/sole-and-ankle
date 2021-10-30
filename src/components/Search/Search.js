@@ -2,16 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Icon from '../Icon';
+import VisuallyHidden from '../VisuallyHidden';
 
 import { COLORS } from '../../constants';
 
-const Search = () => {
+const Search = ({ ...rest }) => {
 	return (
 		<Wrapper>
+			<VisuallyHidden>Search</VisuallyHidden>
 			<IconWrapper>
 				<Icon id={'search'} size={16} strokeWidth={2} />
 			</IconWrapper>
-			<TextInput placeholder={'Search...'} />
+			<TextInput placeholder={'Search...'} {...rest} />
 		</Wrapper>
 	);
 };

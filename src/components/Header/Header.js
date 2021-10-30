@@ -7,7 +7,7 @@ import { COLORS } from '../../constants';
 
 const Header = () => {
 	return (
-		<Wrapper>
+		<header>
 			<SuperHeader />
 			<MainHeader>
 				<Side>
@@ -23,11 +23,9 @@ const Header = () => {
 				</Nav>
 				<Side />
 			</MainHeader>
-		</Wrapper>
+		</header>
 	);
 };
-
-const Wrapper = styled.header``;
 
 const MainHeader = styled.div`
 	border-bottom: 1px solid ${COLORS.gray[300]};
