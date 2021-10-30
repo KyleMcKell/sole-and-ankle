@@ -17,7 +17,7 @@ const SuperHeader = () => {
 					<Icon
 						strokeWidth={1}
 						id={'shopping-bag'}
-						size={24}
+						size={20}
 						color={COLORS.white}
 					/>
 				</IconWrapper>
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 	justify-content: space-between;
 	align-items: baseline;
 	padding: 12px 32px;
-	font-size: ${14 / 16} px;
+	font-size: ${14 / 16}rem;
 `;
 
 const Blurb = styled.h3`
@@ -54,8 +54,8 @@ const HelpLink = styled.a`
 `;
 
 const IconWrapper = styled.a`
-	height: 24px;
-	width: 24px;
+	height: 20px;
+	width: 20px;
 	color: inherit;
 	pointer-events: none;
 	align-self: center;
