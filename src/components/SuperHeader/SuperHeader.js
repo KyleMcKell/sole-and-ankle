@@ -57,12 +57,7 @@ const IconWrapper = styled.a`
 	height: 20px;
 	width: 20px;
 	color: inherit;
-	pointer-events: none;
 	align-self: center;
-
-	&:hover {
-		color: ${COLORS.white};
-	}
 `;
 
 export default SuperHeader;
