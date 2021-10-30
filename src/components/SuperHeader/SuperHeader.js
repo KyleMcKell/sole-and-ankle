@@ -1,45 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { COLORS } from '../../constants';
-
-import SearchInput from '../SearchInput';
-import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 
+import { COLORS, WEIGHTS } from '../../constants';
+import Search from '../Search';
+
 const SuperHeader = () => {
-  return (
-    <Wrapper>
-      <MarketingMessage>
-        Free shipping on domestic orders over $75!
-      </MarketingMessage>
-      <SearchInput />
-      <HelpLink href="/help">Help</HelpLink>
-      <UnstyledButton>
-        <Icon id="shopping-bag" strokeWidth={1} />
-      </UnstyledButton>
-    </Wrapper>
-  );
+	return (
+		<Container>
+			<Blurb>Free shipping on domenstic orders over $75!</Blurb>
+			<RightContainer>
+				<Search />
+				<HelpLink href="/">Help</HelpLink>
+				<IconWrapper href="/">
+					<Icon strokeWidth={1} id={'shopping-bag'} />
+				</IconWrapper>
+			</RightContainer>
+		</Container>
+	);
 };
 
-const Wrapper = styled.div`
-  font-size: 0.875rem;
-  color: ${COLORS.gray[300]};
-  background-color: ${COLORS.gray[900]};
+const Container = styled.div`
+	background-color: ${COLORS.gray[900]};
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 32px;
 `;
 
-const MarketingMessage = styled.span`
-  color: ${COLORS.white};
+const Blurb = styled.h3`
+	color: ${COLORS.white};
+	font-weight: ${WEIGHTS.normal};
+`;
+
+const RightContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	min-width: 300px;
+	color: ${COLORS.gray[300]};
 `;
 
 const HelpLink = styled.a`
-  color: inherit;
-  text-decoration: none;
-  outline-offset: 2px;
+	text-decoration: none;
+	color: inherit;
+`;
 
-  &:not(:focus-visible) {
-    outline: none;
-  }
+const IconWrapper = styled.a`
+	height: 20px;
+	width: 20px;
+	color: inherit;
 `;
 
 export default SuperHeader;
