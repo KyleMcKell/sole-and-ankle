@@ -1,14 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Breadcrumbs from '../Breadcrumbs';
+
+import { WEIGHTS } from '../../constants';
+
 const ShoeIndex = () => {
 	return (
 		<Wrapper>
 			<MainColumn>
-				<h2>Middle</h2>
+				<Title>Running</Title>
 			</MainColumn>
 			<LeftColumn>
-				<h2>Left</h2>
+				<Breadcrumbs>
+					<Breadcrumbs.Crumb href="/">Home</Breadcrumbs.Crumb>
+					<Breadcrumbs.Crumb href="/sale">Sale</Breadcrumbs.Crumb>
+					<Breadcrumbs.Crumb href="sale/shoes">Shoes</Breadcrumbs.Crumb>
+				</Breadcrumbs>
 			</LeftColumn>
 		</Wrapper>
 	);
@@ -25,6 +33,11 @@ const LeftColumn = styled.div`
 
 const MainColumn = styled.div`
 	flex: 1;
+`;
+
+const Title = styled.h2`
+	font-size: ${24 / 16}rem;
+	font-weight: ${WEIGHTS.medium};
 `;
 
 export default ShoeIndex;
