@@ -12,8 +12,8 @@ const SuperHeader = () => {
 			<Blurb>Free shipping on domenstic orders over $75!</Blurb>
 			<RightContainer>
 				<Search />
-				<HelpLink href="/">Help</HelpLink>
-				<IconWrapper href="/">
+				<HelpLink href="/help">Help</HelpLink>
+				<IconWrapper href="/cart">
 					<Icon
 						strokeWidth={1}
 						id={'shopping-bag'}
