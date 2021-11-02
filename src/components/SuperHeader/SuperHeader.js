@@ -26,8 +26,9 @@ const SuperHeader = () => {
 
 const Wrapper = styled.div`
 	display: flex;
-	align-items: baseline;
-	padding: 12px 32px;
+	align-items: center;
+	height: 40px;
+	padding: 0px 32px;
 	gap: 24px;
 	font-size: ${14 / 16}rem;
 	color: ${COLORS.gray[300]};
@@ -49,7 +50,6 @@ const IconWrapper = styled.a`
 	height: 20px;
 	width: 20px;
 	color: inherit;
-	align-self: center;
 `;
 
 export default SuperHeader;
