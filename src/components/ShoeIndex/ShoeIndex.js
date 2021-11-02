@@ -9,7 +9,9 @@ const ShoeIndex = () => {
 	return (
 		<Wrapper>
 			<MainColumn>
-				<Title>Running</Title>
+				<Header>
+					<Title>Running</Title>
+				</Header>
 			</MainColumn>
 			<LeftColumn>
 				<Breadcrumbs>
@@ -35,9 +37,14 @@ const MainColumn = styled.div`
 	flex: 1;
 `;
 
+const Header = styled.header`
+	display: flex;
+`;
+
 const Title = styled.h2`
 	font-size: ${24 / 16}rem;
 	font-weight: ${WEIGHTS.medium};
+	justify-content: space-between;
 `;
 
 export default ShoeIndex;
