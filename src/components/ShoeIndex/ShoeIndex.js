@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Breadcrumbs from '../Breadcrumbs';
-
 import { WEIGHTS } from '../../constants';
+
+import Breadcrumbs from '../Breadcrumbs';
 import Select from '../Select';
+import Spacer from '../Spacer';
+import ShoeSidebar from '../ShoeSidebar';
 
 const ShoeIndex = ({ sortValue, setSortValue }) => {
 	return (
@@ -28,6 +30,8 @@ const ShoeIndex = ({ sortValue, setSortValue }) => {
 					<Breadcrumbs.Crumb href="/sale">Sale</Breadcrumbs.Crumb>
 					<Breadcrumbs.Crumb href="sale/shoes">Shoes</Breadcrumbs.Crumb>
 				</Breadcrumbs>
+				<Spacer size={42} axis={'vertical'} />
+				<ShoeSidebar />
 			</LeftColumn>
 		</Wrapper>
 	);
@@ -36,11 +40,11 @@ const ShoeIndex = ({ sortValue, setSortValue }) => {
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
 `;
 
 const LeftColumn = styled.div`
 	width: 280px;
+	padding-top: 14px;
 `;
 
 const MainColumn = styled.div`
