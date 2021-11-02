@@ -7,6 +7,7 @@ import Breadcrumbs from '../Breadcrumbs';
 import Select from '../Select';
 import Spacer from '../Spacer';
 import ShoeSidebar from '../ShoeSidebar';
+import ShoeGrid from '../ShoeGrid';
 
 const ShoeIndex = ({ sortValue, setSortValue }) => {
 	return (
@@ -23,6 +24,7 @@ const ShoeIndex = ({ sortValue, setSortValue }) => {
 						<option value="price">Price</option>
 					</Select>
 				</Header>
+				<ShoeGrid />
 			</MainColumn>
 			<LeftColumn>
 				<Breadcrumbs>
