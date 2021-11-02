@@ -16,7 +16,7 @@ const Link = styled.a`
 `;
 
 const Wrapper = styled.h1`
-	font-size: 1.5rem;
+	font-size: ${24 / 16}rem;
 	font-weight: ${WEIGHTS.bold};
 `;
 

@@ -10,18 +10,17 @@ const SuperHeader = () => {
 	return (
 		<Wrapper>
 			<Blurb>Free shipping on domenstic orders over $75!</Blurb>
-			<RightContainer>
-				<Search />
-				<HelpLink href="/help">Help</HelpLink>
-				<IconWrapper href="/cart">
-					<Icon
-						strokeWidth={1}
-						id={'shopping-bag'}
-						size={20}
-						color={COLORS.white}
-					/>
-				</IconWrapper>
-			</RightContainer>
+
+			<Search />
+			<HelpLink href="/help">Help</HelpLink>
+			<IconWrapper href="/cart">
+				<Icon
+					strokeWidth={1}
+					id={'shopping-bag'}
+					size={20}
+					color={COLORS.white}
+				/>
+			</IconWrapper>
 		</Wrapper>
 	);
 };
@@ -33,19 +32,14 @@ const Wrapper = styled.div`
 	align-items: baseline;
 	padding: 12px 32px;
 	font-size: ${14 / 16}rem;
+	color: ${COLORS.gray[300]};
+	gap: 24px;
 `;
 
 const Blurb = styled.h3`
 	color: ${COLORS.white};
 	font-weight: ${WEIGHTS.normal};
-`;
-
-const RightContainer = styled.div`
-	display: flex;
-	justify-content: space-between;
-	min-width: 300px;
-	color: ${COLORS.gray[300]};
-	align-items: baseline;
+	margin-right: auto;
 `;
 
 const HelpLink = styled.a`

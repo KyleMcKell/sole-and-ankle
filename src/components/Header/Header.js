@@ -37,7 +37,6 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
 	display: flex;
-	justify-content: center;
 	gap: 48px;
 	margin: 0 48px;
 `;
