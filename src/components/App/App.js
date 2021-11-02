@@ -1,12 +1,15 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import Header from '../Header';
+import ShoeIndex from '../ShoeIndex';
 
 const App = () => {
 	return (
 		<>
 			<Header />
-			<Main>Hi</Main>
+			<Main>
+				<ShoeIndex />
+			</Main>
 		</>
 	);
 };
