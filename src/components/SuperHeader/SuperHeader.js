@@ -10,7 +10,6 @@ const SuperHeader = () => {
 	return (
 		<Wrapper>
 			<Blurb>Free shipping on domenstic orders over $75!</Blurb>
-
 			<Search />
 			<HelpLink href="/help">Help</HelpLink>
 			<IconWrapper href="/cart">
@@ -26,14 +25,13 @@ const SuperHeader = () => {
 };
 
 const Wrapper = styled.div`
-	background-color: ${COLORS.gray[900]};
 	display: flex;
-	justify-content: space-between;
 	align-items: baseline;
 	padding: 12px 32px;
+	gap: 24px;
 	font-size: ${14 / 16}rem;
 	color: ${COLORS.gray[300]};
-	gap: 24px;
+	background-color: ${COLORS.gray[900]};
 `;
 
 const Blurb = styled.h3`
