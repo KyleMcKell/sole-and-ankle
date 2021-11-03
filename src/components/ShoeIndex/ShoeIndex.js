@@ -24,6 +24,7 @@ const ShoeIndex = ({ sortValue, setSortValue }) => {
 						<option value="price">Price</option>
 					</Select>
 				</Header>
+				<Spacer size={34} />
 				<ShoeGrid />
 			</MainColumn>
 			<LeftColumn>
